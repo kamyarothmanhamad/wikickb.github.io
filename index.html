@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurdish Wikipedia Initiative</title>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #f39c12;
+            --text: #2c3e50;
+            --bg: #f5f6fa;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        nav {
+            background: var(--card-bg);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">سەرەکی</a></li>
+                <li><a href="#about">دەربارە</a></li>
+                <li><a href="#join">بەشداری بکە</a></li>
+                <li><a href="#resources">سەرچاوەکان</a></li>
+                <li><a href="#contact">پەیوەندی</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>پڕۆژەی ویکیپیدیای کوردی</h1>
+                <p>با پێکەوە زانیاری بە زمانی کوردی بڵاو بکەینەوە</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>دەربارەی پڕۆژەکە</h2>
+            <p>ویکیپیدیای کوردی پڕۆژەیەکی گشتییە بۆ پەرەپێدانی زانیاری بە زمانی کوردی لە سەر ئینتەرنێت. ئامانجمان بریتییە لە دروستکردنی سەرچاوەیەکی زانیاری پڕ و باوەڕپێکراو بۆ هەموو کوردزمانان.</p>
+        </section>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">٥٠٠٠+</div>
+                <div>وتار</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">١٠٠+</div>
+                <div>بەشداربووان</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">٢٤/٧</div>
+                <div>چالاکی</div>
+            </div>
+        </div>
+
+        <section id="join" class="section">
+            <h2>چۆن بەشداری بکەین؟</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>١. خۆت تۆمار بکە</h3>
+                    <p>لە ویکیپیدیای کوردی هەژمارێک دروست بکە و دەست بکە بە بەشداریکردن</p>
+                </div>
+                <div class="card">
+                    <h3>٢. فێربە</h3>
+                    <p>سەردانی پەڕەی ڕێنماییەکان بکە و فێری شێوازی نووسین و دەستکاریکردن ببە</p>
+                </div>
+                <div class="card">
+                    <h3>٣. بەشداری بکە</h3>
+                    <p>دەست بکە بە نووسینی وتار یان دەستکاریکردنی وتارە هەبووەکان</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <h2>سەرچاوەکان</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>ڕێنماییەکان</h3>
+                    <p>فێری شێوازی نووسین و دەستکاریکردنی وتارەکان ببە</p>
+                </div>
+                <div class="card">
+                    <h3>ڕێساکان</h3>
+                    <p>ئاگاداری ڕێسا و یاساکانی ویکیپیدیای کوردی ببە</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>پەیوەندیمان پێوە بکە</h2>
+            <p>بۆ هەر پرسیارێک یان یارمەتیدان، تکایە پەیوەندیمان پێوە بکە</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>پڕۆژەی ویکیپیدیای کوردی © ٢٠٢٤</p>
+        </div>
+    </footer>
+</body>
+</html>
